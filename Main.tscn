@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsdc5dsjt0idv"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_byp7q"]
+[ext_resource type="Texture2D" uid="uid://c418m73qnr3c5" path="res://assets/colored-transparent_packed.png" id="2_fpu3p"]
+[ext_resource type="PackedScene" uid="uid://8800lycvvviy" path="res://Player.tscn" id="3_n1qyq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45bgn"]
+texture = ExtResource("2_fpu3p")
+10:17/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_y5p5o"]
+custom_data_layer_0/name = "walkable"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_45bgn")
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_byp7q")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_y5p5o")
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 655360, 17, -65536, 655360, 17, -65535, 655360, 17, -65534, 655360, 17, -65533, 655360, 17, -65532, 655360, 17, 4, 655360, 17, 65540, 655360, 17, 131076, 655360, 17, 196612, 655360, 17, 65535, 655360, 17, 131071, 655360, 17, 196607, 655360, 17, 262143, 655360, 17, 196608, 655360, 17, 196611, 655360, 17)
+
+[node name="Player" parent="." instance=ExtResource("3_n1qyq")]

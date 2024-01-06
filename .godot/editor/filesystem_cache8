@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1704539668
+enemy.gd::GDScript::-1::1704537638::0::1::::<>Node2D<>::
+Enemy.tscn::PackedScene::7437521121310890100::1704539212::0::1::::<><>::uid://c418m73qnr3c5::::res://assets/colored-transparent_packed.png
+icon.svg::CompressedTexture2D::5232473369241618331::1704524166::1704524170::1::::<><>::
+main.gd::GDScript::-1::1704539225::0::1::::<>Node2D<>::
+Main.tscn::PackedScene::3656188196054374195::1704539226::0::1::::<><>::res://main.gd<>uid://c418m73qnr3c5::::res://assets/colored-transparent_packed.png<>uid://8800lycvvviy::::res://Player.tscn
+Player.gd::GDScript::-1::1704539145::0::1::::<>Node2D<>::
+Player.tscn::PackedScene::2385919490557766708::1704539147::0::1::::<><>::res://Player.gd<>uid://c418m73qnr3c5::::res://assets/colored-transparent_packed.png
+::res://assets/::1704524766
+colored-transparent_packed.png::CompressedTexture2D::6864018469529615530::1636499093::1704524766::1::::<><>::

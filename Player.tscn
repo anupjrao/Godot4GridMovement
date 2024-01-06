@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://8800lycvvviy"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_lkkio"]
+[ext_resource type="Texture2D" uid="uid://c418m73qnr3c5" path="res://assets/colored-transparent_packed.png" id="2_lgq3n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aklfc"]
+atlas = ExtResource("2_lgq3n")
+region = Rect2(400, 0, 16, 16)
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_lkkio")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_aklfc")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 16)
+collide_with_areas = true
